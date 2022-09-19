@@ -15,4 +15,5 @@ py -3 -m pip install -U discord.py-self[voice]
 
 ## Help
 Put token(s) on the [token.txt](https://github.com/Slayyz/SelfStayInVoice/blob/main/token.txt)
+
 Put Guild and Channel Id in [main.py](https://github.com/Slayyz/SelfStayInVoice/blob/main/main.py)
