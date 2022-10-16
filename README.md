@@ -1,5 +1,5 @@
 ## Introduction
-A Code written in ***Python*** that helps you to keep a lot of accounts 24/7 on discord voice channels.
+A Code written in **Python** that helps you to **keep** a **lot of accounts 24/7** on **discord voice channels**.
 
 ## Installing
 Python 3.8 or higher is required
@@ -14,18 +14,18 @@ py -3 -m pip install -U discord.py-self[voice]
 ```
 
 ## Help
-Put token(s) on the [token.txt](https://github.com/Slayyz/SelfStayInVoice/blob/main/token.txt)
+Put **token(s)** on the [token.txt](https://github.com/Slayyz/SelfStayInVoice/blob/main/token.txt)
 
-Rename config.yaml.example to config.yaml
+Rename **config.yaml.example** to **config.yaml**
 
-Put true or false for self_deaf and self_mute. If you want your tokens to be mute or defan.
+Put **true or false** for **self_deaf** and **self_mute**. If you want your **tokens** to be **mute or defan**.
 
-Put game in game if you want to token play a game. Put None if you want to no play game.
+Put **game** in **game** if you want to **token play a game**. Put **None** if you want to **no play game**.
 
-We can do this for each token.
+We can do this for **each token**.
 
 ## Exemple
-An exemple of a config.yaml
+An **exemple** of a **config.yaml**
 ```
 default:
   guild_id: 843826017273643028
