@@ -12,8 +12,7 @@ def toz(token):
     client = commands.Bot(command_prefix=':', self_bot=True, help_command=None)
     @client.event
     async def on_ready():
-        #print(f'Logged in as {client.user} ({client.user.id})')
-
+        
         vc = discord.utils.get(client.get_guild(token.guild_id).channels, id=token.channel_id)
         await vc.guild.change_voice_state(channel=vc,
                                         self_mute=token.self_mute,
