@@ -1,6 +1,7 @@
 import threading
 import asyncio
 import discord
+import random
 import os
 from discord.ext import commands
 
@@ -17,10 +18,17 @@ def toz(token):
         await vc.guild.change_voice_state(channel=vc,
                                         self_mute=token.self_mute,
                                         self_deaf=token.self_deaf)
-    
-        print(f"Logged in as {client.user} ({client.user.id}). Successfully joined {vc.name} ({vc.id})")
-    client.run(token.token)
 
+        status = random.choice(["online", "dnd", "idle"])
+
+        aert = random.randint(1,2)
+        if aert == 1:
+            await client.change_presence(status=discord.Status(status), activity=discord.Game(name=token.game))
+        if aert == 2:
+            await client.change_presence(status=discord.Status(status), activity=None)
+
+        print(f"As {client.user} ({client.user.id}). Joined {vc.name} ({vc.id}).")
+    client.run(token.token)
 
 tokens = config.get_tokens()
 

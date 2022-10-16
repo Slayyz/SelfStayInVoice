@@ -30,6 +30,7 @@ class Token_config:
     channel_id = None
     self_mute = None
     self_deaf = None
+    game = None
 
 def get_default():
     config = Token_config()
@@ -37,6 +38,7 @@ def get_default():
     config.channel_id = cfg['default']['channel_id']
     config.self_mute = cfg['default']['self_mute']
     config.self_deaf = cfg['default']['self_deaf']
+    config.game = cfg['default']['game']
     return config
 
 def get_tokens():
@@ -52,5 +54,7 @@ def get_tokens():
             config.self_mute = token['self_mute']
         if 'self_deaf' in token:
             config.self_deaf = token['self_deaf']
+        if 'game' in token:
+            config.game = token['game']
         tokens.append(config)
     return tokens
