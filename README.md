@@ -16,8 +16,6 @@ py -3 -m pip install -U discord.py-self[voice]
 ## Help
 Put token(s) on the [token.txt](https://github.com/Slayyz/SelfStayInVoice/blob/main/token.txt)
 
-Put guild_id and channel_id in [main.py](https://github.com/Slayyz/SelfStayInVoice/blob/main/main.py)
-
 Rename config.yaml.example to config.yaml
 
 Put true or false for self_deaf and self_mute. If you want your tokens to be mute or defan.
