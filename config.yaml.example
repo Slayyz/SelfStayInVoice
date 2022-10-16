@@ -1,6 +1,6 @@
 default:
-  guild_id: 966751935598309407
-  channel_id: 1029411596314886154
-  self_mute: true
-  self_deaf: false
-  game: VALORANT
+  guild_id: guild_id 
+  channel_id: channel_id
+  self_mute: true or false
+  self_deaf: true or false
+  game: game
