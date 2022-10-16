@@ -3,3 +3,4 @@ default:
   channel_id: 1029411596314886154
   self_mute: true
   self_deaf: false
+  game: VALORANTs
