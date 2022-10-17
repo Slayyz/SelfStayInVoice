@@ -1,0 +1,13 @@
+default:
+  guild_id: guild_id 
+  channel_id: channel_id
+  self_mute: true or false
+  self_deaf: true or false
+  game: game
+tokens:
+- tokens: token
+  guild_id: guild_id for this token
+  channel_id: channel_id for this token
+  self_mute: true or false for this token
+  self_deaf: true or false for this token
+  game: game for this token
