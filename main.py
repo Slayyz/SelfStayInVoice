@@ -22,7 +22,7 @@ def toz(token):
 
         if random.randint(1,2) == 1:
             await client.change_presence(status=discord.Status(status), activity=discord.Game(name=token.game))
-        else
+        else:
             await client.change_presence(status=discord.Status(status), activity=None)
 
         print(f"As {client.user} ({client.user.id}). Joined {vc.name} ({vc.id}).")
