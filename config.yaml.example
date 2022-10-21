@@ -3,7 +3,7 @@ default:
   channel_id: channel_id
   self_mute: true or false
   self_deaf: true or false
-  game: game
+  game: game or Random or None
 tokens:
 - tokens: token
   guild_id: guild_id for this token

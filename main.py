@@ -19,11 +19,15 @@ def toz(token):
                                         self_deaf=token.self_deaf)
 
         status = random.choice(["online", "dnd", "idle"])
+        games = random.choice(["Minecraft", "Fortnite", "osu!", "League of Legends",])
 
-        if random.randint(1,2) == 1:
-            await client.change_presence(status=discord.Status(status), activity=discord.Game(name=token.game))
+        if token.game == "None":
+            await client.change_presence(status=discord.Status(status))
+        elif token.game == "Random":
+            if random.randint(1,2) == 1:
+                await client.change_presence(status=discord.Status(status), activity=discord.Game(name=games))
         else:
-            await client.change_presence(status=discord.Status(status), activity=None)
+            await client.change_presence(status=discord.Status(status), activity=discord.Game(name=token.game))
 
         print(f"As {client.user} ({client.user.id}). Joined {vc.name} ({vc.id}).")
     client.run(token.token)
@@ -33,7 +37,6 @@ tokens = config.get_tokens()
 clients = []
 
 for i, token in enumerate(tokens):
-    # print(f'I: {i}, K: {token}')
     clients.append(threading.Thread(target=toz, args=(token,)))
     clients[i].start()
 
