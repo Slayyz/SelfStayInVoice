@@ -16,10 +16,18 @@ def toz(token):
         vc = discord.utils.get(client.get_guild(token.guild_id).channels, id=token.channel_id)
         await vc.guild.change_voice_state(channel=vc,
                                         self_mute=token.self_mute,
-                                        self_deaf=token.self_deaf)
+                                        self_deaf=token.self_deaf)                          
 
-        status = random.choice(["online", "dnd", "idle"])
         games = random.choice(["Minecraft", "Fortnite", "osu!", "League of Legends",])
+
+        if token.status == "Random":
+            status = random.choice(["online", "dnd", "idle"])
+        if token.status == "Online":
+            status = "online"
+        if token.status == "Dnd":
+            status = "dnd"
+        if token.status == "Idle":
+            status = "idle"
 
         if token.game == "None":
             await client.change_presence(status=discord.Status(status))
@@ -29,7 +37,7 @@ def toz(token):
         else:
             await client.change_presence(status=discord.Status(status), activity=discord.Game(name=token.game))
 
-        print(f"As {client.user} ({client.user.id}). Joined {vc.name} ({vc.id}).")
+        print(f"As {client.user} ({client.user.id}). Joined {vc.name} ({vc.id}). Set {status}. Played {token.game}")
     client.run(token.token)
 
 tokens = config.get_tokens()
