@@ -1,5 +1,5 @@
 ## Introduction
-A Code written in **Python** that helps you to **keep** a **lot of accounts 24/7** on **discord voice channels**.
+A Code written in **Python** that helps you to **keep** a **lot of accounts 24/7** on **discord voice channels**. The code don't work on linux... Sorry :(
 
 ## Installing
 Python 3.8 or higher is required
@@ -9,12 +9,11 @@ To **install** the **library** :
 # Windows
 py -3 -m pip install -U discord.py-self[voice]
 ```
-To **install** the **Yaml** :
+To **install** the **yaml** :
 ```py
 # Windows
 py -3 -m pip install PyYAML
 ```
-
 
 ## Help
 Put **token(s)** on the [token.txt](https://github.com/Slayyz/SelfStayInVoice/blob/main/token.txt)
@@ -25,7 +24,9 @@ Put **true or false** for **self_deaf** and **self_mute**. If you want your **to
 
 Put **game** in **game** if you want to **token play a game**. Put **None** if you want to **no play game**.
 
-We can do this for **each token**.
+We can do this for **each token**. 
+
+But **before**, **Launch** the **main** so that the **tokens** are **put** in the **config.yaml**.
 
 ## Exemple
 An **exemple** of a **config.yaml**
