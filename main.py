@@ -50,4 +50,6 @@ for i, token in enumerate(tokens):
 
 while True:
     if input() == 'exit':
+        os.system('cls')
+        print('Exit !')
         os.kill(os.getpid(), 9)
