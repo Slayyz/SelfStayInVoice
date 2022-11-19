@@ -6,12 +6,15 @@ Python 3.8 or higher is required
 
 To **install** the **library** :
 ```py
-# Linux/macOS
-python3 -m pip install -U "discord.py-self[voice]"
-
 # Windows
 py -3 -m pip install -U discord.py-self[voice]
 ```
+To **install** the **Yaml** :*
+```py
+# Windows
+py -3 -m pip install PyYAML
+```
+
 
 ## Help
 Put **token(s)** on the [token.txt](https://github.com/Slayyz/SelfStayInVoice/blob/main/token.txt)
